@@ -11,20 +11,14 @@ module.exports = function(lineman) {
     js: {
       vendor: [
         "vendor/js/angular.js",
-        "vendor/js/**/*.js"
+        "vendor/js/**/*.js",
+        "vendor/foundation/bower_components/modernizr/modernizr.js",
+        "vendor/foundation/bower_components/foundation/js/**/*.js",
       ],
       app: [
         "app/js/app.js",
         "app/js/**/*.js"
       ]
-    },
-
-    less: {
-      compile: {
-        options: {
-          paths: ["vendor/css/normalize.css", "vendor/css/**/*.css", "app/css/**/*.less"]
-        }
-      }
     }
   };
 };

@@ -37,7 +37,7 @@ module.exports = function(lineman) {
       //   host: 'localhost',
       //   port: 3000
       // }
-    }
+    },
 
     // Sass
     //
@@ -45,7 +45,7 @@ module.exports = function(lineman) {
     // have Ruby installed as well as the `sass` gem. To enable it, comment out the
     // following line:
     //
-    // enableSass: true
+    enableSass: true,
 
     // Asset Fingerprints
     //
@@ -54,6 +54,12 @@ module.exports = function(lineman) {
     // via grunt-asset-fingerprint
     //
     // enableAssetFingerprint: true
-
+    sass: {                              // Task
+      compile: {
+        options: {
+          loadPath: ["vendor/foundation/bower_components/foundation/scss"]
+        }
+      },
+    }
   };
 };
